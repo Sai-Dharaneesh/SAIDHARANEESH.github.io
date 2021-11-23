@@ -3,7 +3,6 @@
     margin: 0;
     font-family: sans-serif;
 }
-
 nav {
     width: 80%;
     display: flex;
@@ -28,19 +27,22 @@ a {
     color: darkgrey;
 }
 
+
 .contact-us {
-    height: 35px;
+    height: fit-content;
     align-self: center;
     text-transform: uppercase;
     border-radius: 5px;
     background-color: blue;
     color: white;
-    font-weight: 900
+    font-weight: 900;
+    /* word-wrap: break-word; */
 }
 
 nav li a:hover {
-    background-color: darkgrey;
-    color: white;
+    /* background-color: darkgrey; */
+    border-bottom:2px solid black;
+    transition: all 1s forwards;
 }
 
 .project_section {
@@ -119,7 +121,6 @@ span {
 .tech {
     /* width: 150%; */
    display: flex;
-   justify-content: start;
     flex-wrap: wrap;
 }
 .project {
