@@ -46,9 +46,9 @@ nav li a:hover {
 .project_section {
     /* display: grid;
     grid-template-columns: auto auto auto; */
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding-top: 50px;
     margin-left: auto;
     width: 80%;
@@ -56,8 +56,14 @@ nav li a:hover {
 }
 
 h2 {
-    text-align: center;
+    
     font-family: sans-serif;
+    background-color: rgb(224, 105, 199);
+    width: fit-content;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 .intro {
     text-align: center;
@@ -68,10 +74,11 @@ h2 {
 h1 {
     font-family: "Source Code Pro", monospace;
     position: relative;
-    width: max-content;
+    width: fit-content;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    /* font-size: 50px; */
     /* outline: 2px solid red; */
 }
 h1::before,
@@ -110,17 +117,31 @@ span {
     border: 1px solid rgb(150, 134, 134);
 }
 .tech {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 1px;
-    grid-auto-flow: row;
+    /* width: 150%; */
+   display: flex;
+   justify-content: start;
+    flex-wrap: wrap;
 }
 .project {
     width: 300px;
     border-radius: 5px;
-    border: 3px solid red;
-    padding: 5px;
+    border: 3px solid blueviolet;
+    box-shadow: 5px 10px violet;
+    margin: 10px;
 }
 p {
     background-color: lightblue;
+    text-align: center;
+}
+
+@media screen and (min-width: 450px) {
+    h1 {
+        font-size: 20px;
+    }
+    .project {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
